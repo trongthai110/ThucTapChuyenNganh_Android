@@ -5,10 +5,10 @@ import ndtt.myflix.models.Results
 
 @Dao
 interface DetailDao {
-    @Query("SELECT * FROM movies")
+    @Query("SELECT * FROM phim")
     fun getAll(): List<Results>
 
-    @Query("SELECT * FROM movies WHERE id=:id ")
+    @Query("SELECT * FROM phim WHERE id=:id ")
     fun getDetail(id: Int): List<Results>
 
 //    @Query("SELECT * FROM movies WHERE id=:id ")

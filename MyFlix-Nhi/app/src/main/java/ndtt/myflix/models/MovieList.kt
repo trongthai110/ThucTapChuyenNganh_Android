@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import androidx.room.TypeConverter
 import com.google.gson.Gson
 
-@Entity (tableName = "movieList")
+@Entity (tableName = "dsphim")
 data class MovieList(
     @PrimaryKey val id: Int,
     val page: Int,

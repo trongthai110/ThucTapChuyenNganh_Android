@@ -5,7 +5,7 @@ import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "movies")
+@Entity(tableName = "phim")
 data class Results(
     val backdrop_path: String,
     @PrimaryKey
@@ -14,6 +14,7 @@ data class Results(
     val poster_path: String,
     val release_date: String,
     val title: String,
+    val vote_average: Float,
 ): Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString()!!,
@@ -22,7 +23,9 @@ data class Results(
         parcel.readString()!!,
         parcel.readString()!!,
         parcel.readString()!!,
-    ) {
+        parcel.readFloat(),
+
+        ) {
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
@@ -32,6 +35,8 @@ data class Results(
         parcel.writeString(poster_path)
         parcel.writeString(release_date)
         parcel.writeString(title)
+        parcel.writeFloat(vote_average)
+
     }
 
     override fun describeContents(): Int {

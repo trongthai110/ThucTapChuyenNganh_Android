@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         //------room------
         val db = Room.databaseBuilder(
             applicationContext,
-            DetailDb::class.java, "movieList"
+            DetailDb::class.java, "dsphim"
         ).allowMainThreadQueries().build()
 
         detailDao = db.detailDao()
