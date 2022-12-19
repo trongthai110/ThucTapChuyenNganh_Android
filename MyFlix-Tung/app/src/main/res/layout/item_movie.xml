@@ -46,6 +46,34 @@
                 android:textSize="20sp"
                 tools:text="Title" />
 
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@android:style/Widget.DeviceDefault.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:paddingTop="10dp"
+                android:stepSize="0.1"
+                android:progressTint="@android:color/holo_orange_dark"
+                android:progressBackgroundTint="@android:color/holo_orange_dark"
+                android:secondaryProgressTint="@android:color/holo_orange_dark"
+                tools:rating="3.5"/>
+
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="Rating" />
+
+
             <TextView
                 android:id="@+id/tvRating"
                 android:layout_width="match_parent"

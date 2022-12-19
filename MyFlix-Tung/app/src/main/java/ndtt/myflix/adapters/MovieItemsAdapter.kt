@@ -42,6 +42,8 @@ open class MovieItemsAdapter(
 
             holder.itemView.tvRD.text = setReleaseDate(model.release_date)
 
+            holder.itemView.ratingBar.rating = model.vote_average/2
+
             holder.itemView.tvRating.text = model.vote_average.toString()
 
 

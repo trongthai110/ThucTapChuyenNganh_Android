@@ -14,7 +14,7 @@ data class Results(
     val poster_path: String,
     val release_date: String,
     val title: String,
-    val vote_average: Double,
+    val vote_average: Float,
 ): Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString()!!,
@@ -23,7 +23,7 @@ data class Results(
         parcel.readString()!!,
         parcel.readString()!!,
         parcel.readString()!!,
-        parcel.readDouble(),
+        parcel.readFloat(),
 
         ) {
     }
@@ -35,7 +35,7 @@ data class Results(
         parcel.writeString(poster_path)
         parcel.writeString(release_date)
         parcel.writeString(title)
-        parcel.writeDouble(vote_average)
+        parcel.writeFloat(vote_average)
 
     }
 
