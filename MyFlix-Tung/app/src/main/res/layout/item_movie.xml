@@ -62,17 +62,6 @@
                 android:secondaryProgressTint="@android:color/holo_orange_dark"
                 tools:rating="3.5"/>
 
-            <TextView
-                android:id="@+id/tvRating"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:paddingLeft="20dp"
-                android:paddingTop="10dp"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                tools:text="Rating" />
-
 
             <TextView
                 android:id="@+id/tvRating"
